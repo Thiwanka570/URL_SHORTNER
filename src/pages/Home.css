@@ -1,0 +1,62 @@
+/* Basic styling for the home page */
+.home-page {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    color: #343a40;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+  
+  .input-group {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .input-group .form-control {
+    flex: 1;
+  }
+  
+  .input-group .btn {
+    border-radius: 0 0.375rem 0.375rem 0;
+  }
+  
+  .footer {
+    background-color: #343a40;
+    color: white;
+    margin-top: auto;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.375rem;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-body a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .card-body a:hover {
+    text-decoration: underline;
+  }
+  
+  .alert {
+    margin-top: 20px;
+  }
+  
