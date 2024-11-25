@@ -1,70 +1,116 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# URL Shortener
 
-In the project directory, you can run:
+A web application for shortening URLs, built using the MERN (MongoDB, Express, React, Node.js) stack.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Shorten long URLs into concise links.
+- View a list of shortened URLs.
+- Redirect users from short URLs to original links.
+- Real-time usage statistics for links (optional).
+- Modern and responsive user interface.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- **Frontend:** React, CSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Other:** Mongoose, Axios
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation and Setup
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Node.js](https://nodejs.org/)
+- [MongoDB](https://www.mongodb.com/)
+- Git installed on your machine.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Steps to Run Locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Thiwanka570/URL_SHORTNER.git
+   ```
+   
+2. Navigate to the project directory:
+   ```bash
+   cd URL_SHORTNER
+   ```
 
-### `npm run eject`
+3. Install dependencies for the backend:
+   ```bash
+   cd server
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Install dependencies for the frontend:
+   ```bash
+   cd ../client
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Set up environment variables:
+   - Create a `.env` file in the `server` folder.
+   - Add the following environment variables:
+     ```
+     MONGO_URI=<your-mongodb-connection-string>
+     PORT=5000
+     BASE_URL=http://localhost:5000
+     ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6. Start the application:
+   - Run the backend:
+     ```bash
+     cd ../server
+     npm start
+     ```
+   - Run the frontend:
+     ```bash
+     cd ../client
+     npm start
+     ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+7. Open the app in your browser:
+   ```
+   http://localhost:3000
+   ```
 
-## Learn More
+## Folder Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `/server`: Backend code (Express API and database logic).
+- `/client`: Frontend code (React application).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+This project is licensed under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contact
 
-### Making a Progressive Web App
+Feel free to reach out if you have any questions or suggestions!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Author:** Thiwanka  
+- **GitHub:** [Thiwanka570](https://github.com/Thiwanka570)  
+- **Email:** *your-email@example.com*
 
-### Advanced Configuration
+--- 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Replace placeholders (like `<your-mongodb-connection-string>` and `your-email@example.com`) with actual details to personalize the README.
